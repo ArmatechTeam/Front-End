@@ -1,3 +1,35 @@
+body {
+    background-color: black;
+    background-image: radial-gradient(
+      rgba(0, 150, 0, 0.75), black 120%
+    );
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    padding: 2rem;
+    color: white;
+    font: 1.3rem Inconsolata, monospace;
+    text-shadow: 0 0 5px #C8C8C8;
+  }
+  body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: repeating-linear-gradient(0deg, #00000050 3px, transparent 5px);
+    pointer-events: none;
+  }
+  ::selection {
+    background: #0080FF;
+    text-shadow: none;
+  }
+  pre {
+    margin: 0;
+  }
+  
+  
 
 .sayfa{
     display: flex;
@@ -19,9 +51,7 @@
     font-size: 100px;
     -webkit-text-stroke: 2px rgb(0, 255, 21);
     text-align: center;
-    color: rgb(171, 241, 41);
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: underline;
+    /*color: rgb(171, 241, 41);*/
 }
 
 
