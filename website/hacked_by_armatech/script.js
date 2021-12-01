@@ -1,6 +1,8 @@
 // Initialising the canvas
 const contentEl = document.getElementById("content");
 
+let content = contentEl.innerText;
+
 const con = {
     write(text){
         contentEl.innerText += text;
@@ -9,17 +11,6 @@ const con = {
         this.write(text + "\n");
     },
 };
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -41,11 +32,6 @@ for (let i = 0; i < columns; i++) {
 */
 
 
-
-
-
-
-con.write("Hacked by Armatech");
 
 let bo = true;
 function draw() {
@@ -75,9 +61,5 @@ function draw() {
 
 
 
-
-
-
-
-setInterval(draw, 500);
+//setInterval(draw, 500);
 
